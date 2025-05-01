@@ -1,6 +1,9 @@
-CONCERT_PITCH = 440.0
+STUTTGART_PITCH = 440.0
 
-NATURAL_NOTES = {
+BEMOL = "b"
+SHARP = "#"
+
+NATURAL_NOTES_KEY = {
     "C": 0,
     "D": 2,
     "E": 4,
@@ -10,8 +13,19 @@ NATURAL_NOTES = {
     "B": 11,
 }
 
-ACCIDENTALS = {
-    "flat": -1,
-    "natural": 0,
-    "sharp": 1,
+NATURAL_NOTES_INDEX = {
+    0: "C",
+    2: "D",
+    4: "E",
+    5: "F",
+    7: "G",
+    9: "A",
+    11: "B",
 }
+
+ACCIDENTALS = {
+    BEMOL: -1,
+    SHARP: 1,
+}
+
+A4_INDEX = 57 # NATURAL_NOTES_KEY['A'] + (4 * 12)
